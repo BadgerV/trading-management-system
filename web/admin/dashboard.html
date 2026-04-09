@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team performance</title>
+  <link rel="stylesheet" href="/web/assets/css/styles.css" />
+  <script src="/web/assets/js/app-config.js"></script>
+</head>
+<body data-page="admin-dashboard">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div class="main">
+      <header class="header">
+        <strong>Team performance</strong>
+        <div>
+          <span id="header-user" class="muted"></span>
+          <button id="signout-btn" class="secondary" type="button">Sign out</button>
+        </div>
+      </header>
+      <main class="page">
+        <p id="page-flash" class="flash hidden"></p>
+        
+<div class="kpi-grid">
+  <div class="kpi"><div class="label">Team won revenue</div><div id="kpi-revenue" class="value">$0</div></div>
+  <div class="kpi"><div class="label">Deals won</div><div id="kpi-deals" class="value">0</div></div>
+  <div class="kpi"><div class="label">Activities logged</div><div id="kpi-activities" class="value">0</div></div>
+  <div class="kpi"><div class="label">Avg attainment</div><div id="kpi-attainment" class="value">0%</div></div>
+</div>
+<div class="panel"><h2>Leaderboard snapshot</h2><div id="data-table"></div></div>
+<script type="module" src="/web/assets/js/pages/admin-app.js"></script>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

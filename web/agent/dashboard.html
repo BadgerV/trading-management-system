@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My performance</title>
+  <link rel="stylesheet" href="/web/assets/css/styles.css" />
+  <script src="/web/assets/js/app-config.js"></script>
+</head>
+<body data-page="agent-dashboard">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div class="main">
+      <header class="header">
+        <strong>My performance</strong>
+        <div>
+          <span id="header-user" class="muted"></span>
+          <button id="signout-btn" class="secondary" type="button">Sign out</button>
+        </div>
+      </header>
+      <main class="page">
+        <p id="page-flash" class="flash hidden"></p>
+        
+<div class="kpi-grid">
+  <div class="kpi"><div class="label">Won revenue</div><div id="kpi-revenue" class="value">$0</div></div>
+  <div class="kpi"><div class="label">Deals won</div><div id="kpi-deals" class="value">0</div></div>
+  <div class="kpi"><div class="label">Activities logged</div><div id="kpi-activities" class="value">0</div></div>
+  <div class="kpi"><div class="label">Quota attainment</div><div id="kpi-attainment" class="value">0%</div></div>
+</div>
+<div class="panel"><h2>Recent sales</h2><div id="sales-table"></div></div>
+<div class="panel"><h2>Recent activities</h2><div id="activities-table"></div></div>
+<div class="panel"><h2>Quick add sale</h2>
+<form id="quick-sale-form">
+<label>Customer name</label><input name="customer_name" required />
+<label>Deal amount</label><input name="amount" type="number" min="0" step="0.01" required />
+<label>Deal status</label><select name="status"><option value="won">Won</option><option value="lost">Lost</option><option value="pending">Pending</option></select>
+<label>Occurred on</label><input name="occurred_at" type="date" required />
+<label>Closed on</label><input name="closed_at" type="date" />
+<button class="primary" type="submit">Save sale</button></form></div>
+<div class="panel"><h2>Quick log activity</h2>
+<form id="quick-activity-form">
+<label>Activity type</label><select name="activity_type"><option value="call">Call</option><option value="meeting">Meeting</option><option value="email">Email</option><option value="proposal">Proposal</option><option value="follow_up">Follow up</option></select>
+<label>Activity date</label><input name="activity_date" type="date" required />
+<label>What happened?</label><textarea name="notes"></textarea>
+<button class="primary" type="submit">Save activity</button></form></div>
+<script type="module" src="/web/assets/js/pages/agent-app.js"></script>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
