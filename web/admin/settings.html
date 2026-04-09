@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Settings</title>
+  <link rel="stylesheet" href="/web/assets/css/styles.css" />
+  <script src="/web/assets/js/app-config.js"></script>
+</head>
+<body data-page="admin-settings">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div class="main">
+      <header class="header">
+        <strong>System Settings</strong>
+        <div>
+          <span id="header-user" class="muted"></span>
+          <button id="signout-btn" class="secondary" type="button">Sign out</button>
+        </div>
+      </header>
+      <main class="page">
+        <p id="page-flash" class="flash hidden"></p>
+        <div id="settings-content"></div><script type="module" src="/web/assets/js/pages/admin-app.js"></script>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
